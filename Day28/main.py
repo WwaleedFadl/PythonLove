@@ -9,11 +9,34 @@ FONT_NAME = "Courier"
 WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
+reps = 0
+timer = None
 # ---------------------------- TIMER RESET ------------------------------- # 
+def reset_timer(): 
+    window.after_cancel(timer)
+    timer_label.config(text="My Pomodoro", font=("Arial", 50),fg=GREEN,bg=YELLOW)
+    canvas.itemconfig(timer_text,text="00:00") 
+    Done_label.config(text='')
+    global reps 
+    reps = 0
+
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 def start_timer():
-    count_down(5 * 60)
+    global reps 
+    reps += 1
+    work_sec = WORK_MIN * 60 
+    short_break_sec = SHORT_BREAK_MIN * 60 
+    long_break_sec = LONG_BREAK_MIN * 60  
+    if reps % 8 == 0 : 
+        count_down(long_break_sec)
+        timer_label.config(text="Enjoy your long break your deserve it", font=("Arial", 50),fg=GREEN,bg=YELLOW)
+    elif reps %2 ==0: 
+        count_down(short_break_sec)
+        timer_label.config(text="5 min break", font=("Arial", 50),fg=GREEN,bg=YELLOW)
+    else:
+        count_down(work_sec)
+        timer_label.config(text="Work", font=("Arial", 50),fg=RED,bg=YELLOW)
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 def count_down(count):
@@ -23,10 +46,17 @@ def count_down(count):
 
     if count_sec < 10: 
         count_sec = f"0{count_sec}"
-
     canvas.itemconfig(timer_text,text=f"{count_min}:{count_sec}")
     if count > 0: 
-        window.after(1000,count_down,count - 1)
+        global timer
+        timer = window.after(1000,count_down,count - 1)
+    else: 
+        start_timer()
+        mark = ''
+        work_sessions = math.floor(reps/2)
+        for _ in range(work_sessions):
+            mark += '✔'
+        Done_label.config(text=mark)
 
             
 # ---------------------------- UI SETUP ------------------------------- #
@@ -56,25 +86,13 @@ button_start = Button(text='Start',highlightthickness=0,command=start_timer)
 button_start.grid(column=0,row=2)
 
 # End Button 
-button_end = Button(text='Reset',highlightthickness=0)
+button_end = Button(text='Reset',highlightthickness=0,command=reset_timer)
 button_end.grid(column=2,row=2)
 
 #Done Label
-Done_label = Label(text="✔", font=("Arial", 50),fg=GREEN,bg=YELLOW)
+Done_label = Label(font=("Arial", 50),fg=GREEN,bg=YELLOW)
 Done_label.grid(column=1,row=3)
 
 
 #--------------------------------------------- 
 window.mainloop()
-
-'''
-def miles_to_km(): 
-    miles = input1.get()
-    km = float(miles) * 1.609
-    input2.config(text=km)
-#button 
-button = Button(text='Calculate',command=miles_to_km)
-button.grid(column=2,row=2)
-#######################################################################
-window.mainloop()
-'''
