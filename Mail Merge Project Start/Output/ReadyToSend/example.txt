@@ -1,0 +1,1 @@
+<_io.TextIOWrapper name='./Input/Letters/starting_letter.txt' mode='a' encoding='cp1256'>

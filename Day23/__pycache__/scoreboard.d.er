@@ -1,0 +1,9 @@
+##[pylyzer] failed d:\00-code home\python\day23\scoreboard.py 1747113523 307
+.___v_desugar_1: Never
+.Turtle: Never
+.FONT: {Type_v_global_14103: global::Tuple([Str, Nat, Str]) | Type_v_global_14103 == ("Courier", 24, "normal")}
+.Scoreboard: ClassType
+.Scoreboard <: Never
+.Scoreboard.level: Never
+.Scoreboard.__call__: () -> scoreboard.Scoreboard
+

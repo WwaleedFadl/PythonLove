@@ -1,0 +1,14 @@
+##[pylyzer] failed d:\00-code home\python\day22\paddle.py 1746952795 535
+.___v_desugar_1: Never
+.Turtle: Never
+.SHAPE: {"square"}
+.COLOR: {"white"}
+.WIDTH: {5}
+.LENGTH: {1}
+.STARTING_POSITION: {Type_v_global_627: global::Tuple([Nat, Nat]) | Type_v_global_627 == (350, 0)}
+.Paddle: ClassType
+.Paddle <: Never
+.Paddle.__call__: (position: Obj) -> paddle.Paddle
+.Paddle.go_up: (self: paddle.Paddle) -> NoneType
+.Paddle.go_down: (self: paddle.Paddle) -> NoneType
+

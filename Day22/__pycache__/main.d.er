@@ -1,0 +1,55 @@
+##[pylyzer] failed d:\00-code home\python\day22\main.py 1747023551 1389
+.___v_desugar_1: Never
+.Screen: Never
+.Turtle: Never
+.___v_desugar_2 = pyimport "ball"
+.ball = pyimport "ball"
+.Ball: {ball.Ball}
+.___v_desugar_3 = pyimport "paddle"
+.paddle = pyimport "paddle"
+.Paddle: {paddle.Paddle}
+.time: Never
+
+.___v_desugar_4 = pyimport "scoreboard"
+.scoreboard = pyimport "scoreboard"
+.Scoreboard: {scoreboard.Scoreboard}
+.screen: Never
+
+
+
+
+.r_paddle: Never
+.l_paddle: Never
+.ball: Never
+.scoreboard: Never
+
+
+
+
+
+.game_is_on: {True}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

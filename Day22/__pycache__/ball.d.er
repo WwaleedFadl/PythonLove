@@ -1,0 +1,16 @@
+##[pylyzer] failed d:\00-code home\python\day22\ball.py 1747023520 636
+.___v_desugar_1: Never
+.Turtle: Never
+.SHAPE: {"circle"}
+.COLOR: {"green"}
+.Ball: ClassType
+.Ball <: Never
+.Ball.x_move: Never
+.Ball.y_move: Never
+.Ball.move_speed: Never
+.Ball.__call__: () -> ball.Ball
+.Ball.move: (self: ball.Ball) -> NoneType
+.Ball.bounce_y: (self: ball.Ball) -> NoneType
+.Ball.bounce_x: (self: ball.Ball) -> NoneType
+.Ball.reset_position: (self: ball.Ball) -> NoneType
+

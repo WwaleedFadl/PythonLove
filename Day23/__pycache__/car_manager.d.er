@@ -1,0 +1,7 @@
+##[pylyzer] succeed d:\00-code home\python\day23\car_manager.py 1747111008 209
+.COLORS: Never
+.STARTING_MOVE_DISTANCE: {5}
+.MOVE_INCREMENT: {10}
+.CarManager: ClassType
+.CarManager.__call__: () -> car_manager.CarManager
+

@@ -1,0 +1,12 @@
+##[pylyzer] failed d:\00-code home\python\day22\scoreboard.py 1747023265 772
+.___v_desugar_1: Never
+.Turtle: Never
+.Scoreboard: ClassType
+.Scoreboard <: Never
+.Scoreboard.l_score: Never
+.Scoreboard.r_score: Never
+.Scoreboard.__call__: () -> scoreboard.Scoreboard
+.Scoreboard.update_scoreboard: (self: scoreboard.Scoreboard) -> NoneType
+.Scoreboard.l_point: (self: scoreboard.Scoreboard) -> NoneType
+.Scoreboard.r_point: (self: scoreboard.Scoreboard) -> NoneType
+

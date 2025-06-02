@@ -1,0 +1,7 @@
+##[pylyzer] succeed d:\00-code home\python\day23\player.py 1747111017 172
+.STARTING_POSITION: {Type_v_global_1232: global::Tuple([Nat, Int]) | Type_v_global_1232 == (0, -280)}
+.MOVE_DISTANCE: {10}
+.FINISH_LINE_Y: {280}
+.Player: ClassType
+.Player.__call__: () -> player.Player
+
