@@ -3,6 +3,7 @@ from tkinter import *
 window = Tk()
 window.title("Password Generator")
 window.config(padx=100,pady=50)
+
 # ------------------------------------- Canvas
 canvas = Canvas(width=200,height=200,highlightthickness=0)
 logo_img = PhotoImage(file='logo.png')
