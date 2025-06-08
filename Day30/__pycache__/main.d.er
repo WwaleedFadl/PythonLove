@@ -1,0 +1,38 @@
+##[pylyzer] failed d:\00-code home\python\day30\main.py 1749406669 3743
+.DUMMY: Never
+.___v_desugar_1: Never
+.messagebox: Never
+.random: Never
+
+.pyperclip = pyimport "pyperclip"
+
+.json: Never
+
+.generate_password: () -> NoneType
+.window: Never
+
+
+.save: () -> NoneType
+.canvas: Never
+.logo_img: Never
+
+
+.website_label: Never
+
+.website_entry: Never
+
+
+.email_username_label: Never
+
+.email_entry: Never
+
+
+.password_label: Never
+
+.password_entry: Never
+
+.generate_password_button: Never
+
+.add_button: Never
+
+

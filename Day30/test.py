@@ -61,7 +61,7 @@ for post in facebook_posts:
     try:
         total_likes = total_likes + post["Likes"]
     except KeyError: 
-        print("Hey i'm facing a key error")
+        pass
     else: 
         print(f"Total Likes are : {total_likes} ")
     
