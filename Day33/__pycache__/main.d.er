@@ -1,0 +1,17 @@
+##[pylyzer] failed d:\00-code home\python\day33\main.py 1750095484 775
+
+.requests = pyimport "requests"
+
+.___v_desugar_1: Never
+.datetime: Never
+.MY_LAT: {26.20982}
+.MY_LNG: {32.76844}
+.parameters: global::Dict!({{"formatted"}: {0}, {"lat"}: {26.20982}, {"lng"}: {32.76844}})
+.response: NoneType
+
+.data: Never
+.sunrise: Never
+.sunset: Never
+.time_now: Never
+r
+
